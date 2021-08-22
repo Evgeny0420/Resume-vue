@@ -1,4 +1,4 @@
-# resume-1
+# 1
 
 ## Project setup
 ```

@@ -1,0 +1,45 @@
+// Version
+$mobile-widths-only: "max-width: 767px";
+$tablet-widths-max: "max-width: 1023px";
+$desktop-widths: "min-width: 1024px";
+$retina: "min-resolution: 2dppx";
+
+// Fonts
+$font: "Gilroy", "Arial", sans-serif;
+
+// color
+$basic-color: #ffffff;
+$text-color: #000000;
+$blocks-color: #f6f6f6;
+$text-additional-color: #828282;
+
+@mixin link {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-decoration: none;
+  color: $text-additional-color;
+
+  &:hover {
+    color: $text-color;
+    transition: 1s;
+  }
+
+  &:active,
+  &:focus {
+    color: $text-color;
+    filter: drop-shadow(0 4px 4px rgba($text-color, 0.4));
+    transition: 1s;
+  }
+}
+
+@mixin title {
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 42px;
+}
+
+@mixin title-tab {
+  font-size: 47px;
+  line-height: 50px;
+}
